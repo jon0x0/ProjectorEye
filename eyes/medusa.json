@@ -1,0 +1,72 @@
+{
+  "name": "Medusa",
+  "description": "Gorgon's gaze: venom-green throbbing glow, emerald serpent scales, pupil snaps on you",
+  "seed": 91,
+  "blink_strength": 0.3,
+  "vignette": 0.75,
+  "motion": {
+    "micro": 0.2,
+    "pursuit": 1.2,
+    "pupil_snap": 0.8,
+    "pupil_speed": 0.6
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.48,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2,
+    "lid_shape": 1.6,
+    "lid_open_height": 0.92,
+    "lower_lid": 0.1
+  },
+  "sclera": {
+    "center": "#1a4a20",
+    "mid": "#0c2a10",
+    "edge": "#020a04",
+    "veins": 14,
+    "vein_color": "#60ff70",
+    "vein_alpha": 0.25,
+    "vein_width": 0.005
+  },
+  "iris": {
+    "inner": "#e8ff8a",
+    "mid": "#40c040",
+    "outer": "#0a3a10",
+    "limbus": "#000a02",
+    "limbus_width": 0.15,
+    "fibers": 260,
+    "fiber_color": "#0a3010",
+    "fiber_alpha": 0.55,
+    "spots": 20,
+    "glow": 0.6,
+    "glow_color": "#70ff50",
+    "glow_pulse": 0.6
+  },
+  "pupil": {
+    "shape": "slit",
+    "color": "#000000",
+    "min": 0.03,
+    "max": 0.2,
+    "height": 0.95,
+    "rim_color": "#d0ff60",
+    "rim_width": 0.01
+  },
+  "lid": {
+    "color": "#2a6a3a",
+    "shade": "#061a0c",
+    "edge": "#020804",
+    "edge_width": 0.035,
+    "wet_line": "#60c070",
+    "creases": 1,
+    "crease_color": "#04140a",
+    "texture": 0.3,
+    "spots_color": "#104a20",
+    "scales": 0.065,
+    "scale_highlight": "#7ad890",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.5,
+    "size": 0.05
+  }
+}

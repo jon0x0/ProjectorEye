@@ -1,0 +1,72 @@
+{
+  "name": "Unblinking Demon",
+  "description": "Blood-red sclera, flame-marbled iris, razor slit. Never blinks; pupil snaps shut when it spots you",
+  "seed": 666,
+  "blink_strength": 0,
+  "vignette": 0.8,
+  "motion": {
+    "micro": 0,
+    "pursuit": 1.4,
+    "saccades": 0.6,
+    "pupil_snap": 0.9,
+    "pupil_speed": 0.5
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.42,
+    "gaze_range_x": 0.45,
+    "gaze_range_y": 0.25,
+    "ball_radius": 1.0,
+    "lid_shape": 1.7,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.08
+  },
+  "sclera": {
+    "center": "#c4140a",
+    "mid": "#8a0804",
+    "edge": "#2a0000",
+    "veins": 30,
+    "vein_color": "#3a0000",
+    "vein_alpha": 0.6,
+    "vein_width": 0.008,
+    "vein_length": 0.6
+  },
+  "iris": {
+    "inner": "#fff04a",
+    "mid": "#ff7a10",
+    "outer": "#4a0400",
+    "limbus": "#000000",
+    "limbus_width": 0.2,
+    "fibers": 260,
+    "fiber_color": "#3a0000",
+    "fiber_alpha": 0.6,
+    "spots": 30,
+    "glow": 0.45,
+    "glow_color": "#ffb000"
+  },
+  "pupil": {
+    "shape": "slit",
+    "color": "#000000",
+    "min": 0.025,
+    "max": 0.2,
+    "height": 0.97,
+    "rim_color": "#ffe24a",
+    "rim_width": 0.012
+  },
+  "lid": {
+    "color": "#2a0d0a",
+    "shade": "#060101",
+    "edge": "#000000",
+    "edge_width": 0.03,
+    "wet_line": "#a8140c",
+    "creases": 4,
+    "crease_color": "#0a0202",
+    "texture": 0.7,
+    "spots_color": "#40100a",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.35,
+    "size": 0.05
+  }
+}

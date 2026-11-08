@@ -1,0 +1,64 @@
+{
+  "name": "Crocodile",
+  "description": "Mottled olive-gold croc eye under heavy armoured lids",
+  "seed": 77,
+  "vignette": 0.7,
+  "geometry": {
+    "eye_center_y": 0.48,
+    "iris_radius": 0.55,
+    "gaze_range_x": 0.3,
+    "gaze_range_y": 0.15,
+    "ball_radius": 1.2,
+    "lid_shape": 1.5,
+    "lid_open_height": 0.82,
+    "lower_lid": 0.18
+  },
+  "sclera": {
+    "center": "#5a5a28",
+    "mid": "#3a3a18",
+    "edge": "#141406",
+    "veins": 10,
+    "vein_color": "#22220a",
+    "vein_alpha": 0.5,
+    "vein_width": 0.008
+  },
+  "iris": {
+    "inner": "#d8c25e",
+    "mid": "#9a8a30",
+    "outer": "#45441a",
+    "limbus": "#141405",
+    "limbus_width": 0.18,
+    "fibers": 120,
+    "fiber_color": "#2a2408",
+    "fiber_alpha": 0.6,
+    "spots": 60,
+    "glow": 0.08,
+    "glow_color": "#d0d070"
+  },
+  "pupil": {
+    "shape": "slit",
+    "color": "#000000",
+    "min": 0.04,
+    "max": 0.3,
+    "height": 0.98,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#3e3c1e",
+    "shade": "#100f06",
+    "edge": "#0e0c04",
+    "edge_width": 0.04,
+    "wet_line": "#8a7a50",
+    "creases": 1,
+    "crease_color": "#14120a",
+    "texture": 0.9,
+    "spots_color": "#2e2c12",
+    "scales": 0.12,
+    "scale_highlight": "#5c5a2e",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.6,
+    "size": 0.05
+  }
+}

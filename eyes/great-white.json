@@ -1,0 +1,66 @@
+{
+  "name": "Great White",
+  "description": "Flat, black, soulless shark eye that never blinks and rolls back white when it strikes",
+  "seed": 51,
+  "blink_strength": 0,
+  "vignette": 0.7,
+  "motion": {
+    "micro": 0,
+    "pursuit": 1.3,
+    "saccades": 0.5,
+    "rollback": 1,
+    "rollback_s": 1.4
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.5,
+    "gaze_range_x": 0.3,
+    "gaze_range_y": 0.15,
+    "lid_shape": 2.2,
+    "lid_open_height": 0.97,
+    "lower_lid": 0.06
+  },
+  "sclera": {
+    "center": "#e8ecef",
+    "mid": "#c8d0d6",
+    "edge": "#4a5a66",
+    "veins": 6,
+    "vein_color": "#7a6a70",
+    "vein_alpha": 0.4
+  },
+  "iris": {
+    "inner": "#0a0e14",
+    "mid": "#101a24",
+    "outer": "#060a10",
+    "limbus": "#000000",
+    "limbus_width": 0.1,
+    "fibers": 60,
+    "fiber_color": "#1e2c3a",
+    "fiber_alpha": 0.5,
+    "spots": 0,
+    "glow": 0
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.55,
+    "max": 0.75,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#5c6874",
+    "shade": "#1c242c",
+    "edge": "#0c1014",
+    "edge_width": 0.03,
+    "wet_line": "#8a9aa8",
+    "creases": 1,
+    "crease_color": "#2a343c",
+    "texture": 0.5,
+    "spots_color": "#3a4650",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.85,
+    "size": 0.08
+  }
+}

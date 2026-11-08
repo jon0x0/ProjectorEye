@@ -1,0 +1,75 @@
+{
+  "name": "Kraken",
+  "description": "Abyssal sea monster: vast bioluminescent blue eye, slow tidal drift",
+  "seed": 121,
+  "vignette": 0.8,
+  "motion": {
+    "micro": 0.3,
+    "pursuit": 4,
+    "saccades": 0,
+    "drift": 0.05,
+    "pupil_speed": 0.3,
+    "blink_speed": 2.5
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.55,
+    "gaze_range_x": 0.3,
+    "gaze_range_y": 0.15,
+    "ball_radius": 1.3,
+    "lid_shape": 2.3,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.06
+  },
+  "sclera": {
+    "center": "#0a2030",
+    "mid": "#04121c",
+    "edge": "#000408",
+    "veins": 20,
+    "vein_color": "#20a0c0",
+    "vein_alpha": 0.3,
+    "vein_width": 0.004
+  },
+  "iris": {
+    "inner": "#a0f0ff",
+    "mid": "#1a7ab0",
+    "outer": "#041a30",
+    "limbus": "#00040a",
+    "limbus_width": 0.18,
+    "fibers": 200,
+    "fiber_color": "#0a3a5a",
+    "fiber_alpha": 0.5,
+    "spots": 30,
+    "glow": 0.45,
+    "glow_color": "#30c8ff",
+    "glow_pulse": 0.15,
+    "chromatophores": 80,
+    "chroma_color": "#60e8ff",
+    "chroma_alpha": 0.45,
+    "chroma_speed": 0.4
+  },
+  "pupil": {
+    "shape": "goat",
+    "color": "#000000",
+    "min": 0.08,
+    "max": 0.24,
+    "height": 0.7,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#2a3a4a",
+    "shade": "#060a10",
+    "edge": "#020406",
+    "edge_width": 0.025,
+    "wet_line": "#4a8aa0",
+    "creases": 6,
+    "crease_color": "#0a141c",
+    "texture": 1.0,
+    "spots_color": "#4a3a5a",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.5,
+    "size": 0.07
+  }
+}

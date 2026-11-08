@@ -1,0 +1,72 @@
+{
+  "name": "Basilisk",
+  "description": "Serpent king whose gaze kills: sulfur-yellow throbbing iris, never blinks",
+  "seed": 111,
+  "blink_strength": 0,
+  "vignette": 0.8,
+  "motion": {
+    "micro": 0,
+    "pursuit": 1.0,
+    "saccades": 0.8,
+    "pupil_snap": 0.9,
+    "pupil_speed": 0.4
+  },
+  "geometry": {
+    "eye_center_y": 0.48,
+    "iris_radius": 0.56,
+    "gaze_range_x": 0.3,
+    "gaze_range_y": 0.15,
+    "lid_shape": 1.5,
+    "lid_open_height": 0.85,
+    "lower_lid": 0.14
+  },
+  "sclera": {
+    "center": "#4a5a10",
+    "mid": "#2a3406",
+    "edge": "#080a02",
+    "veins": 10,
+    "vein_color": "#ffe040",
+    "vein_alpha": 0.3,
+    "vein_width": 0.005
+  },
+  "iris": {
+    "inner": "#fffbd0",
+    "mid": "#fff040",
+    "outer": "#8a8a00",
+    "limbus": "#141400",
+    "limbus_width": 0.12,
+    "fibers": 280,
+    "fiber_color": "#6a6a00",
+    "fiber_alpha": 0.5,
+    "spots": 16,
+    "glow": 0.75,
+    "glow_color": "#fff060",
+    "glow_pulse": 0.35
+  },
+  "pupil": {
+    "shape": "slit",
+    "color": "#000000",
+    "min": 0.02,
+    "max": 0.14,
+    "height": 0.97,
+    "rim_color": "#ffffff",
+    "rim_width": 0.008
+  },
+  "lid": {
+    "color": "#3a4a1a",
+    "shade": "#0a1004",
+    "edge": "#020400",
+    "edge_width": 0.04,
+    "wet_line": "#a0b040",
+    "creases": 0,
+    "texture": 0.3,
+    "spots_color": "#1a2408",
+    "scales": 0.085,
+    "scale_highlight": "#8a9a40",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.4,
+    "size": 0.05
+  }
+}

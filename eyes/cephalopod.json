@@ -1,0 +1,70 @@
+{
+  "name": "Cephalopod",
+  "description": "Colossal deep-sea squid eye: metallic gold iris, W pupil, rippling chromatophores",
+  "seed": 31,
+  "vignette": 0.75,
+  "motion": {
+    "micro": 0.6,
+    "pursuit": 1.5,
+    "saccades": 0.7,
+    "blink_speed": 1.6
+  },
+  "geometry": {
+    "eye_center_y": 0.46,
+    "iris_radius": 0.5,
+    "gaze_range_x": 0.35,
+    "gaze_range_y": 0.2,
+    "ball_radius": 1.2,
+    "lid_shape": 2.4,
+    "lid_open_height": 0.97,
+    "lower_lid": 0.05
+  },
+  "sclera": {
+    "center": "#1a3a40",
+    "mid": "#0c2228",
+    "edge": "#020608",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#fff0b0",
+    "mid": "#d4a03a",
+    "outer": "#3a5a50",
+    "limbus": "#021014",
+    "limbus_width": 0.16,
+    "fibers": 300,
+    "fiber_color": "#2a8a80",
+    "fiber_alpha": 0.45,
+    "spots": 40,
+    "glow": 0.25,
+    "glow_color": "#40e0c8",
+    "chromatophores": 120,
+    "chroma_color": "#60ffe0",
+    "chroma_alpha": 0.7,
+    "chroma_speed": 0.8
+  },
+  "pupil": {
+    "shape": "w",
+    "color": "#000000",
+    "min": 0.08,
+    "max": 0.2,
+    "height": 0.62,
+    "rim_color": "#80fff0",
+    "rim_width": 0.006
+  },
+  "lid": {
+    "color": "#3c2a3a",
+    "shade": "#0c060c",
+    "edge": "#060206",
+    "edge_width": 0.02,
+    "wet_line": "#7a5a8a",
+    "creases": 5,
+    "crease_color": "#1a0e1a",
+    "texture": 0.9,
+    "spots_color": "#6a2a4a",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.6,
+    "size": 0.07
+  }
+}

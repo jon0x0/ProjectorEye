@@ -1,0 +1,66 @@
+{
+  "name": "Smaug",
+  "description": "Molten-gold dragon eye, razor slit, armoured scaly lids",
+  "seed": 42,
+  "vignette": 0.75,
+  "geometry": {
+    "eye_center_y": 0.5,
+    "iris_radius": 0.52,
+    "gaze_range_x": 0.35,
+    "gaze_range_y": 0.2,
+    "ball_radius": 1.1,
+    "lid_shape": 1.6,
+    "lid_open_height": 0.9,
+    "lower_lid": 0.12
+  },
+  "sclera": {
+    "center": "#b8460c",
+    "mid": "#6e1c05",
+    "edge": "#200402",
+    "veins": 16,
+    "vein_color": "#ffb040",
+    "vein_alpha": 0.35,
+    "vein_width": 0.006,
+    "vein_length": 0.45
+  },
+  "iris": {
+    "inner": "#ffd84a",
+    "mid": "#f0a018",
+    "outer": "#9a3004",
+    "limbus": "#2a0800",
+    "limbus_width": 0.1,
+    "fibers": 260,
+    "fiber_color": "#6a1e02",
+    "fiber_alpha": 0.5,
+    "spots": 25,
+    "glow": 0.55,
+    "glow_color": "#ffb020"
+  },
+  "pupil": {
+    "shape": "slit",
+    "color": "#030100",
+    "min": 0.03,
+    "max": 0.22,
+    "height": 0.95,
+    "rim_color": "#ffd060",
+    "rim_width": 0.01
+  },
+  "lid": {
+    "color": "#7a2a14",
+    "shade": "#2a0a04",
+    "edge": "#120402",
+    "edge_width": 0.035,
+    "wet_line": "#ff7a30",
+    "creases": 2,
+    "crease_color": "#1a0502",
+    "texture": 0.3,
+    "spots_color": "#3a1006",
+    "scales": 0.09,
+    "scale_highlight": "#d08a3a",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.5,
+    "size": 0.06
+  }
+}

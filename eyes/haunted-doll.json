@@ -1,0 +1,67 @@
+{
+  "name": "Haunted Doll",
+  "description": "Cracked porcelain doll with a glassy blue eye that jerks, stares and snaps shut",
+  "seed": 261,
+  "vignette": 0.6,
+  "motion": {
+    "micro": 0,
+    "pursuit": 6,
+    "saccades": 3,
+    "blink_speed": 0.5
+  },
+  "overlay_fx": {
+    "cracks": 1.0,
+    "crack_color": "#2a201a"
+  },
+  "geometry": {
+    "eye_center_y": 0.45,
+    "iris_radius": 0.36,
+    "gaze_range_x": 0.5,
+    "gaze_range_y": 0.25,
+    "lid_shape": 2.0,
+    "lid_open_height": 0.96,
+    "lower_lid": 0.06
+  },
+  "sclera": {
+    "center": "#ffffff",
+    "mid": "#eae6e0",
+    "edge": "#8a8478",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#c0e4ff",
+    "mid": "#3a8ad8",
+    "outer": "#0a2a5a",
+    "limbus": "#041020",
+    "limbus_width": 0.18,
+    "fibers": 140,
+    "fiber_color": "#c8e8ff",
+    "fiber_alpha": 0.3,
+    "spots": 0,
+    "glow": 0
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.3,
+    "max": 0.32,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#f4e4dc",
+    "shade": "#b49a90",
+    "edge": "#2a1a14",
+    "edge_width": 0.025,
+    "wet_line": "#e8a0a0",
+    "creases": 1,
+    "crease_color": "#c8b0a6",
+    "texture": 0.1,
+    "spots_color": "#e0c8c0",
+    "lashes": 22,
+    "lash_length": 0.11
+  },
+  "highlight": {
+    "alpha": 0.95,
+    "size": 0.08
+  }
+}

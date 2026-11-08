@@ -1,0 +1,45 @@
+{
+  "name": "Housefly",
+  "description": "Giant compound insect eye: thousands of glistening red-brown facets",
+  "seed": 211,
+  "lids": "off",
+  "blink_strength": 0,
+  "vignette": 0.6,
+  "motion": {
+    "micro": 2,
+    "saccades": 2,
+    "pursuit": 0.4
+  },
+  "geometry": {
+    "eye_center_y": 0.5,
+    "iris_radius": 0.05,
+    "gaze_range_x": 0.2,
+    "gaze_range_y": 0.1
+  },
+  "sclera": {
+    "center": "#a8301a",
+    "mid": "#6a1808",
+    "edge": "#1a0402",
+    "veins": 0,
+    "facets": 0.035,
+    "facet_highlight": "#ffd0a0"
+  },
+  "iris": {
+    "inner": "#000000",
+    "mid": "#000000",
+    "outer": "#000000",
+    "fibers": 0,
+    "spots": 0,
+    "glow": 0,
+    "limbus_width": 0
+  },
+  "pupil": {
+    "shape": "none"
+  },
+  "highlight": {
+    "alpha": 0.5,
+    "size": 0.15,
+    "x": -1.5,
+    "y": -1.2
+  }
+}

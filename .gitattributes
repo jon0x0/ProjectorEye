@@ -1,0 +1,4 @@
+# LF everywhere: these files run on the Pis (sh, python, systemd units).
+* text=auto eol=lf
+*.png binary
+*.jpg binary

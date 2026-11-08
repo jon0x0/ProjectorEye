@@ -1,0 +1,5 @@
+# Hub (projector Pi): aiohttp. Sensor (camera Pi) also needs opencv + numpy,
+# and picamera2 from apt (python3-picamera2) for the Pi camera.
+aiohttp>=3.8
+opencv-python-headless>=4.5
+numpy>=1.21

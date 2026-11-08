@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101114">
+<title>Projector Eye</title>
+<link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<header>
+  <div class="title">Projector Eye</div>
+  <div class="pills">
+    <span id="pill-hub" class="pill bad">hub</span>
+    <span id="pill-phase" class="pill">asleep</span>
+    <span id="pill-sensor" class="pill bad">camera</span>
+    <span id="pill-display" class="pill bad">projector</span>
+    <span id="pill-pi" class="pill" style="display:none">pi</span>
+  </div>
+  <nav id="tabs">
+    <button data-tab="control" class="on">Control</button>
+    <button data-tab="camera">Camera</button>
+    <button data-tab="calibrate">Calibrate</button>
+    <button data-tab="tune">Behavior</button>
+    <button data-tab="eyes">Eyes</button>
+    <button data-tab="media">Media</button>
+    <button data-tab="setup">Projector</button>
+  </nav>
+</header>
+
+<main>
+  <!-- CONTROL -->
+  <section id="tab-control" class="tab on">
+    <div class="card preview-card"><canvas id="preview" class="eye-preview"></canvas></div>
+    <div class="card">
+      <div class="seg" id="mode-seg">
+        <button data-mode="auto">Auto</button>
+        <button data-mode="random">Random</button>
+        <button data-mode="manual">Manual</button>
+        <button data-mode="demo">Demo</button>
+        <button data-mode="track">Track test</button>
+      </div>
+      <p class="hint" id="mode-hint"></p>
+      <div class="seg small" id="awake-seg">
+        <button data-awake="0">Sleeps when no motion</button>
+        <button data-awake="1">Always awake</button>
+      </div>
+      <div class="seg small" id="scan-seg">
+        <button data-scan="0">Darts only</button>
+        <button data-scan="1">Security scan</button>
+      </div>
+      <div id="control-mode-fields"></div>
+      <div class="seg small" id="shape-seg">
+        <button data-shape="full">Full screen</button>
+        <button data-shape="semicircle">Semicircle window</button>
+      </div>
+      <div class="row buttons">
+        <button data-cmd="wake" class="primary">Wake</button>
+        <button data-cmd="blink">Blink</button>
+        <button data-cmd="sleep">Sleep</button>
+      </div>
+      <div id="control-fields"></div>
+    </div>
+    <div class="card">
+      <h3>Look here <small>(drag &mdash; switches to Manual)</small></h3>
+      <canvas id="pad-control" class="gaze-pad"></canvas>
+      <div id="manual-fields"></div>
+    </div>
+    <div class="card">
+      <h3>Demo positions</h3>
+      <div id="positions" class="chips"></div>
+      <div class="row">
+        <button id="pos-save">Save current gaze</button>
+      </div>
+      <div id="demo-fields"></div>
+    </div>
+  </section>
+
+  <!-- CAMERA -->
+  <section id="tab-camera" class="tab">
+    <div class="card">
+      <div id="cam-pick" class="chips"></div>
+      <div id="cam-settings"></div>
+      <div class="camview" id="cam-main"></div>
+      <div class="seg small" id="cam-tool">
+        <button data-tool="none" class="on">View</button>
+        <button data-tool="sim">Simulate motion</button>
+        <button data-tool="zone">Draw ignore zone</button>
+      </div>
+      <p class="hint" id="cam-status"></p>
+    </div>
+    <div class="card">
+      <h3 id="zones-title">Ignore zones</h3>
+      <div id="zones" class="chips"></div>
+    </div>
+    <div class="card"><h3>Detection <small>(all cameras)</small></h3><div id="camera-fields"></div></div>
+  </section>
+
+  <!-- CALIBRATE -->
+  <section id="tab-calibrate" class="tab">
+    <div class="card">
+      <h3>Calibrate the eyeline</h3>
+      <ol class="steps">
+        <li>Have someone stand in the detection area. A box shows on every camera that sees them.</li>
+        <li>Drag the gaze pad until the projected eye looks straight at them (judge from where they stand).</li>
+        <li>Tap <b>Capture point</b>. It records every camera that sees them, which also ties the cameras together. Repeat at 4&ndash;6 spots per camera: left, centre, right, near and far, and a few where both cameras see the person.</li>
+        <li>Switch to <b>Track test</b> and walk the area to check.</li>
+      </ol>
+      <div id="cal-views"></div>
+      <p class="hint" id="cal-live"></p>
+    </div>
+    <div class="card">
+      <canvas id="pad-cal" class="gaze-pad"></canvas>
+      <div class="row buttons">
+        <button id="cal-capture" class="primary">Capture point</button>
+        <button id="cal-track">Track test</button>
+        <button id="cal-manual">Manual</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Points</h3>
+      <p class="hint" id="cal-kind"></p>
+      <table class="points"><thead><tr><th>#</th><th>cameras</th><th>gaze</th><th>error</th><th></th></tr></thead><tbody id="cal-points"></tbody></table>
+      <p class="hint" id="cal-sel-hint"></p>
+      <div class="row"><button id="cal-clear" class="danger">Clear points</button></div>
+    </div>
+    <div class="card">
+      <h3>Combine cameras</h3>
+      <p class="hint" id="combo-hint"></p>
+      <canvas id="combo" class="combo"></canvas>
+      <div class="seg small" id="combo-tool">
+        <button data-tool="view" class="on">Pick points</button>
+        <button data-tool="divider">Move dividing line</button>
+      </div>
+      <div class="group-title">Line up a camera</div>
+      <div id="align-pick" class="chips"></div>
+      <div id="combo-fields"></div>
+      <div id="fusion-box">
+        <div class="group-title">Which camera wins</div>
+        <div class="field"><label for="fuse-prio">Where both see someone, use</label><select id="fuse-prio"></select></div>
+        <div id="fuse-fields"></div>
+        <div class="field"><label for="div-on">Dividing line</label><span class="switch"><input type="checkbox" id="div-on"><span></span></span></div>
+        <div class="field"><label for="div-left">Left side</label><select id="div-left"></select></div>
+        <div class="field"><label for="div-right">Right side</label><select id="div-right"></select></div>
+        <div class="row"><button id="div-swap">Swap sides</button><button id="div-reset">Reset line</button></div>
+        <p class="hint">Each side of the line belongs to one camera. The other camera is used there only while the owner sees nobody (a tree in its way, say).</p>
+      </div>
+    </div>
+    <div class="card"><h3>Mapping</h3><div id="cal-fields"></div></div>
+  </section>
+
+  <!-- BEHAVIOR -->
+  <section id="tab-tune" class="tab">
+    <div id="tune-fields"></div>
+    <div class="card">
+      <h3>Wake / sleep keyframes</h3>
+      <p class="hint">t in seconds; open 0&ndash;1.2, bright 0&ndash;1, pupil 0&ndash;1, gx/gy gaze offset, ease linear|in|out|inout. The first keyframe starts from the eye's current state.</p>
+      <div class="seg small" id="seq-seg"><button data-seq="wake" class="on">Wake</button><button data-seq="sleep">Sleep</button></div>
+      <textarea id="seq-text" rows="12" spellcheck="false"></textarea>
+      <div class="row buttons"><button id="seq-apply" class="primary">Apply</button><button id="seq-test">Test</button><button id="seq-reset">Defaults</button></div>
+    </div>
+    <div class="card"><button class="danger" data-reset="behavior">Reset behavior to defaults</button></div>
+  </section>
+
+  <!-- EYES -->
+  <section id="tab-eyes" class="tab">
+    <div class="card">
+      <div class="field"><label for="boot-eye">At start-up show</label><select id="boot-eye"></select></div>
+      <div id="eye-list" class="eye-list"></div>
+    </div>
+    <div class="card">
+      <h3>Random mode</h3>
+      <p class="hint">In Random mode (Control tab) a different eye is picked while the screen is dark, so each wake-up can be a new creature. Choose which eyes take part.</p>
+      <div id="random-fields"></div>
+      <div class="group-title">Include</div>
+      <div id="random-pool" class="chips"></div>
+      <div class="row buttons"><button id="random-now">Switch to a random eye now</button></div>
+    </div>
+    <div class="card">
+      <h3>Edit <span id="eye-edit-name"></span> <small id="eye-dirty"></small></h3>
+      <p class="hint">Changes show live on the projector. Save to keep them. <b>&#8634;</b> resets a setting to the original; it is highlighted when changed.</p>
+      <div class="row buttons">
+        <button id="eye-save" class="primary">Save</button>
+        <button id="eye-saveas">Save as new</button>
+        <button id="eye-revert">Revert</button>
+        <button id="eye-restore" class="danger" title="Discard your saved changes to this built-in eye">Restore original</button>
+        <button id="eye-delete" class="danger">Delete</button>
+      </div>
+      <div id="eye-editor"></div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="tab-media" class="tab">
+    <div class="card"><h3>Random animations</h3><div id="media-fields"></div></div>
+    <div class="card">
+      <h3>Files</h3>
+      <div id="media-list"></div>
+      <label class="upload">Upload video or image<input type="file" id="media-upload" accept="video/*,image/*" multiple></label>
+      <div class="row buttons"><button id="media-random">Play random</button><button id="media-stop">Stop</button></div>
+    </div>
+  </section>
+
+  <!-- PROJECTOR -->
+  <section id="tab-setup" class="tab">
+    <div class="card">
+      <h3>Output resolution</h3>
+      <p class="hint">What the Pi sends to the projector. 1920x1080 at 60 Hz is smooth and light on the Pi; 4K makes it draw four times the pixels (and this projector only does 4K at 30 Hz).</p>
+      <div class="field"><label for="out-mode">Mode</label><select id="out-mode"><option value="auto">Auto (projector's choice)</option></select></div>
+      <p class="hint" id="out-status"></p>
+    </div>
+    <div class="card"><h3>Window alignment</h3><div id="proj-fields"></div></div>
+    <div class="card">
+      <h3>Keystone corners</h3>
+      <div class="seg small" id="corner-seg">
+        <button data-corner="tl" class="on">Top left</button><button data-corner="tr">Top right</button>
+        <button data-corner="bl">Bottom left</button><button data-corner="br">Bottom right</button>
+      </div>
+      <div class="nudge">
+        <button data-nudge="0,-1">&uarr;</button>
+        <button data-nudge="-1,0">&larr;</button><button data-nudge="reset">0</button><button data-nudge="1,0">&rarr;</button>
+        <button data-nudge="0,1">&darr;</button>
+      </div>
+      <div id="keystone-fields"></div>
+    </div>
+    <div class="card">
+      <h3>Settings file</h3>
+      <div class="row buttons">
+        <a class="button" href="/api/settings" download="projector-eye-settings.json">Export</a>
+        <label class="button">Import<input type="file" id="settings-import" accept="application/json" hidden></label>
+        <button class="danger" data-reset="">Reset everything</button>
+      </div>
+      <div class="row buttons"><button id="reload-display">Reload projector</button></div>
+      <p class="hint">Reload projector picks up new eye code or effects without restarting the Pi.</p>
+      <p class="hint">Projector page: <code id="display-url"></code></p>
+    </div>
+  </section>
+</main>
+<div id="toast"></div>
+<script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

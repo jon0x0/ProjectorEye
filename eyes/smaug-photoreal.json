@@ -1,0 +1,99 @@
+{
+  "name": "Smaug (Photoreal)",
+  "description": "Photographic Smaug: tilted eye in scaled skin and horns, sliding third eyelid, jagged slit, glowing when fully awake",
+  "style": "dragon",
+  "seed": 33,
+  "vignette": 0.45,
+  "blink_strength": 0.9,
+  "motion": {
+    "micro": 0.2,
+    "pursuit": 1.8,
+    "saccades": 0.6,
+    "pupil_snap": 0.4,
+    "blink_speed": 2.2
+  },
+  "pupil": {
+    "min": 0.05,
+    "max": 0.16
+  },
+  "sequences": {
+    "wake": [
+      {
+        "t": 0.0,
+        "open": 0.0,
+        "bright": 0.0,
+        "pupil": 0.8
+      },
+      {
+        "t": 0.8,
+        "open": 0.0,
+        "bright": 1.0
+      },
+      {
+        "t": 1.7,
+        "open": 0.3,
+        "ease": "inout"
+      },
+      {
+        "t": 2.2,
+        "open": 0.3
+      },
+      {
+        "t": 3.4,
+        "open": 0.65,
+        "ease": "inout"
+      },
+      {
+        "t": 3.8,
+        "open": 0.65
+      },
+      {
+        "t": 4.8,
+        "open": 1.0,
+        "pupil": 0.4,
+        "ease": "out"
+      }
+    ],
+    "sleep": [
+      {
+        "t": 0.0,
+        "open": 1.0,
+        "bright": 1.0,
+        "pupil": 0.4
+      },
+      {
+        "t": 1.2,
+        "open": 0.65,
+        "ease": "inout"
+      },
+      {
+        "t": 1.6,
+        "open": 0.65
+      },
+      {
+        "t": 2.8,
+        "open": 0.3,
+        "pupil": 0.8,
+        "ease": "inout"
+      },
+      {
+        "t": 3.6,
+        "open": 0.3
+      },
+      {
+        "t": 4.8,
+        "open": 0.0,
+        "ease": "in"
+      },
+      {
+        "t": 5.2,
+        "bright": 1.0
+      },
+      {
+        "t": 6.2,
+        "bright": 0.0,
+        "ease": "inout"
+      }
+    ]
+  }
+}

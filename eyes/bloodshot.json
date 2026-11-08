@@ -1,0 +1,13 @@
+{
+  "name": "Bloodshot",
+  "description": "Scary human eye: angry red veins, raw red-rimmed lids, tiny pupil",
+  "seed": 13,
+  "blink_strength": 1,
+  "vignette": 0.6,
+  "geometry": {"eye_center_y": 0.45, "iris_radius": 0.27, "gaze_range_x": 0.6, "gaze_range_y": 0.32, "ball_radius": 0.95, "lid_shape": 2.0, "lid_open_height": 0.97, "lower_lid": 0.07},
+  "sclera": {"center": "#f2e6dc", "mid": "#e2b7a8", "edge": "#7a1410", "veins": 85, "vein_color": "#b8120c", "vein_alpha": 0.85, "vein_width": 0.011, "vein_length": 0.85},
+  "iris": {"inner": "#b9c4c8", "mid": "#6c7f88", "outer": "#2a343a", "limbus": "#0a0f12", "limbus_width": 0.2, "fibers": 200, "fiber_color": "#1c262c", "fiber_alpha": 0.5, "spots": 20, "glow": 0, "glow_color": "#ffffff"},
+  "pupil": {"shape": "round", "color": "#020202", "min": 0.12, "max": 0.42, "rim_width": 0},
+  "lid": {"color": "#c08872", "shade": "#5a2620", "edge": "#3a0c0a", "edge_width": 0.032, "wet_line": "#e0302a", "creases": 3, "crease_color": "#6a2a22", "texture": 0.5, "spots_color": "#8a3a30", "scales": 0, "lashes": 34, "lash_length": 0.07},
+  "highlight": {"alpha": 0.8, "size": 0.06}
+}

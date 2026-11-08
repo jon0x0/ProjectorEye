@@ -1,0 +1,18 @@
+[Unit]
+Description=Projector eye motion sensor (camera)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=@USER@
+WorkingDirectory=@DIR@
+ExecStart=/usr/bin/python3 -u -m sensor
+Restart=always
+RestartSec=3
+# Lower priority than the projector renderer when both run on one Pi; ffmpeg
+# decoders inherit it.
+Nice=10
+CPUWeight=50
+
+[Install]
+WantedBy=multi-user.target

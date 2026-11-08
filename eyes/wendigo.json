@@ -1,0 +1,75 @@
+{
+  "name": "Wendigo",
+  "description": "Starving spirit of the frozen north: glowing ice-blue eye, frost creeping over the glass",
+  "seed": 271,
+  "blink_strength": 0.4,
+  "vignette": 0.75,
+  "motion": {
+    "micro": 0.2,
+    "pursuit": 1.6,
+    "saccades": 0.7,
+    "pupil_snap": 0.5,
+    "drift": 0.02
+  },
+  "overlay_fx": {
+    "frost": 1.0,
+    "frost_color": "#bfe4ff"
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.38,
+    "gaze_range_x": 0.45,
+    "gaze_range_y": 0.22,
+    "lid_shape": 1.7,
+    "lid_open_height": 0.9,
+    "lower_lid": 0.1
+  },
+  "sclera": {
+    "center": "#1a2a3a",
+    "mid": "#0c1620",
+    "edge": "#020408",
+    "veins": 20,
+    "vein_color": "#6ab0e0",
+    "vein_alpha": 0.3,
+    "vein_width": 0.005
+  },
+  "iris": {
+    "inner": "#ffffff",
+    "mid": "#8ad8ff",
+    "outer": "#0a3a6a",
+    "limbus": "#000a14",
+    "limbus_width": 0.15,
+    "fibers": 220,
+    "fiber_color": "#e0f4ff",
+    "fiber_alpha": 0.4,
+    "spots": 0,
+    "glow": 0.65,
+    "glow_color": "#a0e0ff",
+    "glow_pulse": 0.25
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.04,
+    "max": 0.14,
+    "rim_color": "#ffffff",
+    "rim_width": 0.01
+  },
+  "lid": {
+    "color": "#4a4440",
+    "shade": "#0e0c0a",
+    "edge": "#040302",
+    "edge_width": 0.035,
+    "wet_line": "#6a8aa0",
+    "creases": 5,
+    "crease_color": "#1a1614",
+    "texture": 0.8,
+    "spots_color": "#2a2420",
+    "fur": 0.5,
+    "fur_color": "#8a8278"
+  },
+  "highlight": {
+    "alpha": 0.6,
+    "size": 0.05
+  }
+}

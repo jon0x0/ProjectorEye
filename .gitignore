@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# Per-installation: settings, saved camera passwords, edited eyes, backups
+config/
+.claude/
+media/*
+!media/.gitkeep

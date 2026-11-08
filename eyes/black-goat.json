@@ -1,0 +1,66 @@
+{
+  "name": "Black Goat",
+  "description": "Devilish goat: pale yellow iris, wide horizontal pupil that stays level, coarse black fur",
+  "seed": 71,
+  "vignette": 0.7,
+  "motion": {
+    "micro": 0.4,
+    "pursuit": 1.4,
+    "saccades": 0.6
+  },
+  "geometry": {
+    "eye_center_y": 0.46,
+    "iris_radius": 0.5,
+    "gaze_range_x": 0.3,
+    "gaze_range_y": 0.15,
+    "lid_shape": 2.0,
+    "lid_open_height": 0.82,
+    "lower_lid": 0.08
+  },
+  "sclera": {
+    "center": "#4a3a20",
+    "mid": "#2a2010",
+    "edge": "#0a0804",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#f4e8a0",
+    "mid": "#d8c060",
+    "outer": "#7a6020",
+    "limbus": "#1a1404",
+    "limbus_width": 0.12,
+    "fibers": 180,
+    "fiber_color": "#5a4810",
+    "fiber_alpha": 0.35,
+    "spots": 18,
+    "glow": 0.15,
+    "glow_color": "#fff0a0"
+  },
+  "pupil": {
+    "shape": "goat",
+    "color": "#000000",
+    "min": 0.06,
+    "max": 0.2,
+    "height": 0.75,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#1e1a18",
+    "shade": "#050404",
+    "edge": "#000000",
+    "edge_width": 0.03,
+    "wet_line": "#4a3a34",
+    "creases": 1,
+    "crease_color": "#0a0808",
+    "texture": 0.2,
+    "spots_color": "#141210",
+    "fur": 0.9,
+    "fur_color": "#2c2622",
+    "lashes": 18,
+    "lash_length": 0.06
+  },
+  "highlight": {
+    "alpha": 0.7,
+    "size": 0.06
+  }
+}

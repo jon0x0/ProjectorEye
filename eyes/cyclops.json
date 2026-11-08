@@ -1,0 +1,68 @@
+{
+  "name": "Cyclops",
+  "description": "The giant's single eye: huge, bloodshot and brown under a heavy, wrinkled brow",
+  "seed": 101,
+  "vignette": 0.65,
+  "motion": {
+    "micro": 0.8,
+    "pursuit": 2.5,
+    "saccades": 0.7,
+    "blink_speed": 1.8,
+    "drift": 0.02
+  },
+  "geometry": {
+    "eye_center_y": 0.44,
+    "iris_radius": 0.32,
+    "gaze_range_x": 0.6,
+    "gaze_range_y": 0.3,
+    "lid_shape": 2.0,
+    "lid_open_height": 0.88,
+    "lower_lid": 0.1
+  },
+  "sclera": {
+    "center": "#f0e4d4",
+    "mid": "#dcbca4",
+    "edge": "#6a2a1a",
+    "veins": 55,
+    "vein_color": "#b0201a",
+    "vein_alpha": 0.7,
+    "vein_width": 0.012,
+    "vein_length": 0.7
+  },
+  "iris": {
+    "inner": "#c8904a",
+    "mid": "#7a4a1a",
+    "outer": "#3a200a",
+    "limbus": "#140a04",
+    "limbus_width": 0.2,
+    "fibers": 240,
+    "fiber_color": "#2a1606",
+    "fiber_alpha": 0.5,
+    "spots": 30,
+    "glow": 0
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#030201",
+    "min": 0.15,
+    "max": 0.42,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#a87a5a",
+    "shade": "#3a2216",
+    "edge": "#2a1408",
+    "edge_width": 0.04,
+    "wet_line": "#c05a4a",
+    "creases": 7,
+    "crease_color": "#4a2a1a",
+    "texture": 0.9,
+    "spots_color": "#6a4430",
+    "lashes": 40,
+    "lash_length": 0.1
+  },
+  "highlight": {
+    "alpha": 0.75,
+    "size": 0.07
+  }
+}

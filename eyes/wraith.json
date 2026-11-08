@@ -1,0 +1,36 @@
+{
+  "name": "Wraith",
+  "description": "Spectral eye of drifting grave-mist with a cold white light at its heart",
+  "style": "void",
+  "lids": "off",
+  "seed": 161,
+  "vignette": 0.6,
+  "motion": {
+    "micro": 0.2,
+    "pursuit": 3,
+    "saccades": 0,
+    "drift": 0.06
+  },
+  "geometry": {
+    "eye_center_y": 0.48,
+    "iris_radius": 0.42,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2
+  },
+  "pupil": {
+    "min": 0.06,
+    "max": 0.2
+  },
+  "void": {
+    "base": "#060a10",
+    "smoke_color": "#8aa4c0",
+    "smoke": 1.4,
+    "sheen_color": "#c8dcf0",
+    "sheen": 0.15,
+    "iridescence": 0.1,
+    "star_color": "#eef8ff",
+    "pulse": 0.35,
+    "parallax": 0.6,
+    "speed": 0.7
+  }
+}

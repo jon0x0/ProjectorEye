@@ -1,0 +1,37 @@
+{
+  "name": "Eye of Sauron",
+  "description": "Film-style: feathery curling flame on black, smouldering red core, soft dark oval pupil",
+  "style": "sauron",
+  "seed": 19,
+  "vignette": 0.3,
+  "motion": {
+    "micro": 0.3,
+    "pursuit": 1.5,
+    "saccades": 0.7,
+    "pupil_snap": 0.4
+  },
+  "geometry": {
+    "eye_center_y": 0.5,
+    "iris_radius": 0.38,
+    "gaze_range_x": 0.28,
+    "gaze_range_y": 0.06
+  },
+  "pupil": {
+    "min": 0.1,
+    "max": 0.2,
+    "height": 0.6
+  },
+  "sauron": {
+    "flame_reach": 1.0,
+    "aspect": 1.15,
+    "wisps": 1.0,
+    "halo": 0.6,
+    "inner_red": 0.7,
+    "feather": 1.0,
+    "speed": 1.0,
+    "quality": 0.2,
+    "octaves": 5,
+    "base": 1.368
+  },
+  "blink_strength": 0
+}

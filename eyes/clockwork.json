@@ -1,0 +1,69 @@
+{
+  "name": "Clockwork",
+  "description": "Steampunk automaton: brass gears turning around a glowing amber lens",
+  "seed": 221,
+  "blink_strength": 0.6,
+  "vignette": 0.7,
+  "motion": {
+    "micro": 0,
+    "pursuit": 0.5,
+    "saccades": 1.5,
+    "blink_speed": 1.4
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.46,
+    "gaze_range_x": 0.35,
+    "gaze_range_y": 0.18,
+    "lid_shape": 2.4,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.06
+  },
+  "sclera": {
+    "center": "#4a3a22",
+    "mid": "#2a2012",
+    "edge": "#080604",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#ffd890",
+    "mid": "#c07a20",
+    "outer": "#3a2006",
+    "limbus": "#b08a40",
+    "limbus_width": 0.06,
+    "fibers": 60,
+    "fiber_color": "#5a3a10",
+    "fiber_alpha": 0.3,
+    "spots": 0,
+    "glow": 0.4,
+    "glow_color": "#ffb040",
+    "gears": 3,
+    "gear_color": "#e8c060",
+    "gear_speed": 0.35
+  },
+  "pupil": {
+    "shape": "aperture",
+    "blades": 9,
+    "color": "#050302",
+    "min": 0.12,
+    "max": 0.3,
+    "rim_color": "#e8c060"
+  },
+  "lid": {
+    "color": "#8a6a3a",
+    "shade": "#2a1e0e",
+    "edge": "#1a1208",
+    "edge_width": 0.045,
+    "wet_line": "#e0b060",
+    "creases": 3,
+    "crease_color": "#4a3418",
+    "texture": 0.4,
+    "spots_color": "#5a4020",
+    "scales": 0.05,
+    "scale_highlight": "#d8b070"
+  },
+  "highlight": {
+    "alpha": 0.7,
+    "size": 0.06
+  }
+}

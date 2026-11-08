@@ -1,0 +1,8 @@
+{
+  "name": "Swamp Beast",
+  "description": "Yellow-green reptile eye, slit pupil, bloodshot",
+  "seed": 1,
+  "iris": {"inner": "#f2e14a", "mid": "#9cc22b", "outer": "#2d5a12", "glow": 0.3, "glow_color": "#c8ff3a"},
+  "pupil": {"shape": "slit"},
+  "lid": {"color": "#55613a", "shade": "#1b2310", "creases": 3}
+}

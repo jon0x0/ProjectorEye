@@ -1,0 +1,60 @@
+{
+  "name": "Jack-o'-Lantern",
+  "description": "A carved pumpkin eye with a candle flame flickering inside",
+  "seed": 231,
+  "lids": "on",
+  "blink_strength": 0.25,
+  "vignette": 0.6,
+  "motion": {
+    "micro": 0.3,
+    "pursuit": 2,
+    "saccades": 0.5
+  },
+  "geometry": {
+    "eye_center_y": 0.42,
+    "iris_radius": 0.48,
+    "gaze_range_x": 0.3,
+    "gaze_range_y": 0.15,
+    "lid_shape": 1.3,
+    "lid_open_height": 0.78,
+    "lower_lid": 0.15
+  },
+  "sclera": {
+    "center": "#ffc040",
+    "mid": "#c05a08",
+    "edge": "#2a0a00",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#fff6c0",
+    "mid": "#ffb020",
+    "outer": "#c04a00",
+    "limbus": "#4a1400",
+    "limbus_width": 0.3,
+    "fibers": 40,
+    "fiber_color": "#ff9000",
+    "fiber_alpha": 0.3,
+    "spots": 0,
+    "glow": 0.9,
+    "glow_color": "#ffa020",
+    "glow_flicker": 0.6
+  },
+  "pupil": {
+    "shape": "none"
+  },
+  "lid": {
+    "color": "#e8780a",
+    "shade": "#6a2a02",
+    "edge": "#3a1200",
+    "edge_width": 0.03,
+    "wet_line": "#ffd060",
+    "creases": 6,
+    "crease_color": "#8a3a04",
+    "texture": 0.4,
+    "spots_color": "#c05a06",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0
+  }
+}

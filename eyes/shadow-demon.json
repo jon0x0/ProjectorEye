@@ -1,0 +1,49 @@
+{
+  "name": "Shadow Demon",
+  "description": "A void of black smoke with a burning red core that flares when it finds you",
+  "style": "void",
+  "lids": "on",
+  "seed": 171,
+  "blink_strength": 0.2,
+  "vignette": 0.6,
+  "motion": {
+    "micro": 0,
+    "pursuit": 1.2,
+    "pupil_snap": 0.6
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.42,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2,
+    "lid_shape": 1.6,
+    "lid_open_height": 0.92,
+    "lower_lid": 0.08
+  },
+  "pupil": {
+    "min": 0.06,
+    "max": 0.22
+  },
+  "void": {
+    "base": "#000000",
+    "smoke_color": "#3a0806",
+    "smoke": 1.2,
+    "sheen_color": "#ff8060",
+    "sheen": 0.25,
+    "iridescence": 0.15,
+    "star_color": "#ff3010",
+    "pulse": 1.2,
+    "parallax": 0.4
+  },
+  "lid": {
+    "color": "#1a0a08",
+    "shade": "#000000",
+    "edge": "#000000",
+    "edge_width": 0.03,
+    "wet_line": "#6a0a04",
+    "creases": 4,
+    "crease_color": "#050101",
+    "texture": 0.5,
+    "spots_color": "#2a0a06"
+  }
+}

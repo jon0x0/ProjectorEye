@@ -1,0 +1,72 @@
+{
+  "name": "Mesmer",
+  "description": "Hypnotist's eye: a violet spiral endlessly turning into the pupil",
+  "seed": 241,
+  "blink_strength": 0.3,
+  "vignette": 0.65,
+  "motion": {
+    "micro": 0,
+    "pursuit": 2.2,
+    "saccades": 0.3,
+    "pupil_speed": 0.4
+  },
+  "geometry": {
+    "eye_center_y": 0.46,
+    "iris_radius": 0.44,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2,
+    "lid_shape": 2.0,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.07
+  },
+  "sclera": {
+    "center": "#f0e8f4",
+    "mid": "#d0c0dc",
+    "edge": "#3a2050",
+    "veins": 10,
+    "vein_color": "#8a40a0",
+    "vein_alpha": 0.4
+  },
+  "iris": {
+    "inner": "#ffb0ff",
+    "mid": "#8a20c0",
+    "outer": "#20043a",
+    "limbus": "#08000e",
+    "limbus_width": 0.15,
+    "fibers": 80,
+    "fiber_color": "#3a0a5a",
+    "fiber_alpha": 0.35,
+    "spots": 0,
+    "glow": 0.4,
+    "glow_color": "#d040ff",
+    "glow_pulse": 0.5,
+    "spiral": 0.65,
+    "spiral_arms": 3,
+    "spiral_speed": -1.1,
+    "spiral_color": "#ff70ff"
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.08,
+    "max": 0.2,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#d8c0d0",
+    "shade": "#5a3a54",
+    "edge": "#200a20",
+    "edge_width": 0.03,
+    "wet_line": "#c050a0",
+    "creases": 3,
+    "crease_color": "#8a6a84",
+    "texture": 0.3,
+    "spots_color": "#b090a8",
+    "lashes": 30,
+    "lash_length": 0.09
+  },
+  "highlight": {
+    "alpha": 0.6,
+    "size": 0.05
+  }
+}

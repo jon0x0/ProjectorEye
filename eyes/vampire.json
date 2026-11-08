@@ -1,0 +1,72 @@
+{
+  "name": "Vampire",
+  "description": "Hypnotic crimson eye: rings pull you into the pupil, pale bloodless skin",
+  "seed": 131,
+  "blink_strength": 0.5,
+  "vignette": 0.7,
+  "motion": {
+    "micro": 0.1,
+    "pursuit": 1.8,
+    "saccades": 0.5,
+    "pupil_speed": 0.5
+  },
+  "geometry": {
+    "eye_center_y": 0.45,
+    "iris_radius": 0.34,
+    "gaze_range_x": 0.55,
+    "gaze_range_y": 0.28,
+    "lid_shape": 1.9,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.07
+  },
+  "sclera": {
+    "center": "#f4ecee",
+    "mid": "#e0c8cc",
+    "edge": "#5a1a24",
+    "veins": 18,
+    "vein_color": "#a01020",
+    "vein_alpha": 0.5,
+    "vein_width": 0.006
+  },
+  "iris": {
+    "inner": "#ff8a90",
+    "mid": "#d00a1e",
+    "outer": "#40000a",
+    "limbus": "#0a0002",
+    "limbus_width": 0.2,
+    "fibers": 220,
+    "fiber_color": "#30000a",
+    "fiber_alpha": 0.5,
+    "spots": 8,
+    "glow": 0.45,
+    "glow_color": "#ff1030",
+    "glow_pulse": 0.8,
+    "hypno": 0.55,
+    "hypno_color": "#ff4058",
+    "hypno_speed": 1.0
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.08,
+    "max": 0.3,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#e0d0d4",
+    "shade": "#7a5a64",
+    "edge": "#2a0a12",
+    "edge_width": 0.03,
+    "wet_line": "#c02040",
+    "creases": 3,
+    "crease_color": "#9a7a84",
+    "texture": 0.3,
+    "spots_color": "#c0a8b0",
+    "lashes": 36,
+    "lash_length": 0.09
+  },
+  "highlight": {
+    "alpha": 0.7,
+    "size": 0.05
+  }
+}

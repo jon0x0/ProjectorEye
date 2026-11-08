@@ -1,0 +1,67 @@
+{
+  "name": "Cyborg",
+  "description": "Machine eye: camera-shutter pupil, red sensor glow, sweeping scan line, jerky servo moves",
+  "seed": 201,
+  "blink_strength": 0,
+  "vignette": 0.8,
+  "motion": {
+    "micro": 0,
+    "pursuit": 0.3,
+    "saccades": 2,
+    "pupil_snap": 0.7,
+    "pupil_speed": 3
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.42,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2,
+    "lid_shape": 3.0,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.05
+  },
+  "sclera": {
+    "center": "#3a3c40",
+    "mid": "#202226",
+    "edge": "#060608",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#ff5a3a",
+    "mid": "#a01008",
+    "outer": "#1a0202",
+    "limbus": "#9aa0a8",
+    "limbus_width": 0.08,
+    "fibers": 0,
+    "spots": 0,
+    "glow": 0.65,
+    "glow_color": "#ff1a08",
+    "glow_pulse": 1.2,
+    "scanline": 0.8,
+    "scan_color": "#ff3a20",
+    "scan_speed": 1.2
+  },
+  "pupil": {
+    "shape": "aperture",
+    "blades": 7,
+    "color": "#000000",
+    "min": 0.2,
+    "max": 0.55,
+    "rim_color": "#c8ccd4"
+  },
+  "lid": {
+    "color": "#5a5e66",
+    "shade": "#141618",
+    "edge": "#08090a",
+    "edge_width": 0.04,
+    "wet_line": "#8a9098",
+    "creases": 2,
+    "crease_color": "#2a2c30",
+    "texture": 0.15,
+    "spots_color": "#3a3c40"
+  },
+  "highlight": {
+    "alpha": 0.6,
+    "size": 0.05
+  }
+}

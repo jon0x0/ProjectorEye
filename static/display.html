@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eye Display</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; cursor: none; }
+  #stage { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; transform-origin: 0 0; }
+  #msg { position: fixed; left: 8px; bottom: 6px; color: #444; font: 12px sans-serif; }
+</style>
+</head>
+<body>
+<canvas id="stage"></canvas>
+<div id="msg"></div>
+<script type="module">
+import { EyeRenderer, homographyCss } from "/static/js/eye-renderer.js";
+import { connect } from "/static/js/link.js";
+
+const canvas = document.getElementById("stage");
+const msgEl = document.getElementById("msg");
+let link;
+const eye = new EyeRenderer(canvas, {
+  media: true,
+  onMediaEnded: () => link && link.send({ type: "cmd", name: "media_ended" }),
+});
+
+function applyKeystone(p) {
+  const k = p.keystone || {};
+  const W = innerWidth, H = innerHeight;
+  const o = (c) => k[c] || [0, 0];
+  const src = [[0, 0], [W, 0], [W, H], [0, H]];
+  const dst = [
+    [o("tl")[0] * W, o("tl")[1] * H],
+    [W + o("tr")[0] * W, o("tr")[1] * H],
+    [W + o("br")[0] * W, H + o("br")[1] * H],
+    [o("bl")[0] * W, H + o("bl")[1] * H],
+  ];
+  const flat = ["tl", "tr", "br", "bl"].every((c) => !o(c)[0] && !o(c)[1]);
+  canvas.style.transform = flat ? "none" : homographyCss(src, dst);
+}
+
+let settings = null;
+function applySettings(s) {
+  settings = s;
+  eye.setProjection(s.projection);
+  eye.setBehavior(s.behavior);
+  applyKeystone(s.projection);
+}
+addEventListener("resize", () => settings && applyKeystone(settings.projection));
+
+// Cursor: hidden unless the mouse is actually moving; hides after 2 s idle.
+let cursorTimer = null;
+addEventListener("pointermove", () => {
+  document.body.style.cursor = "default";
+  clearTimeout(cursorTimer);
+  cursorTimer = setTimeout(() => (document.body.style.cursor = "none"), 2000);
+});
+
+link = connect("display", {
+  init: (m) => applySettings(m.settings),
+  settings: (m) => applySettings(m.settings),
+  eye: (m) => eye.setTemplate(m.template),
+  phase: (m) => eye.onPhase(m),
+  frame: (m) => eye.onFrame(m),
+  blink: (m) => eye.onBlink(m),
+  media: (m) => eye.onMedia(m),
+  reload: () => location.reload(),
+  _open: () => (msgEl.textContent = ""),
+  _close: () => { msgEl.textContent = "reconnecting…"; eye.onPhase({ phase: "asleep" }); },
+});
+// Time spent drawing each frame (JS + canvas commands), for diagnostics.
+let drawMs = 0, drawN = 0;
+const renderNow = eye.renderNow.bind(eye);
+eye.renderNow = () => { const a = performance.now(); renderNow(); drawMs += performance.now() - a; drawN++; };
+eye.start();
+
+// Diagnostics for the control page: real frame rate, canvas size, GPU.
+(function stats() {
+  let frames = 0, t0 = performance.now(), worst = 0, last = t0;
+  let gpu = "?";
+  try {   // once: each probe would create (and leak) a GL context
+    const g = document.createElement("canvas").getContext("webgl");
+    const ext = g && g.getExtension("WEBGL_debug_renderer_info");
+    gpu = g ? (ext ? g.getParameter(ext.UNMASKED_RENDERER_WEBGL) : g.getParameter(g.RENDERER)) : "no WebGL";
+    const lose = g && g.getExtension("WEBGL_lose_context");
+    if (lose) lose.loseContext();
+  } catch {}
+  const tick = (t) => {
+    frames++;
+    worst = Math.max(worst, t - last);
+    last = t;
+    if (t - t0 >= 5000) {
+      link.send({ type: "display_stats", fps: Math.round((frames * 1000) / (t - t0)), worst_ms: Math.round(worst),
+        canvas: [canvas.width, canvas.height], screen: [screen.width, screen.height], dpr: devicePixelRatio, gpu,
+        draw_ms: drawN ? Math.round((drawMs / drawN) * 10) / 10 : null });
+      frames = 0; worst = 0; t0 = t; drawMs = 0; drawN = 0;
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

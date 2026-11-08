@@ -1,0 +1,9 @@
+{
+  "name": "Eye of Flame",
+  "description": "Lidless eye of shimmering fire with a glowing slit",
+  "style": "fire",
+  "seed": 11,
+  "vignette": 0.5,
+  "geometry": {"eye_center_y": 0.5, "iris_radius": 0.4, "gaze_range_x": 0.45, "gaze_range_y": 0.18},
+  "pupil": {"min": 0.06, "max": 0.2, "height": 0.85}
+}

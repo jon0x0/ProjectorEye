@@ -1,0 +1,70 @@
+{
+  "name": "Parasite",
+  "description": "Milky bloodshot eye with a swarm of tiny pupils darting, clumping and scattering",
+  "seed": 9,
+  "vignette": 0.6,
+  "motion": {
+    "micro": 0.5
+  },
+  "geometry": {
+    "eye_center_y": 0.45,
+    "iris_radius": 0.4,
+    "gaze_range_x": 0.5,
+    "gaze_range_y": 0.28,
+    "lid_shape": 2.0,
+    "lid_open_height": 0.97,
+    "lower_lid": 0.07
+  },
+  "sclera": {
+    "center": "#ece6d8",
+    "mid": "#d8c2b0",
+    "edge": "#6a2a20",
+    "veins": 60,
+    "vein_color": "#a8241a",
+    "vein_alpha": 0.7,
+    "vein_width": 0.008,
+    "vein_length": 0.75
+  },
+  "iris": {
+    "inner": "#e8e4d6",
+    "mid": "#c8c2b0",
+    "outer": "#8a8270",
+    "limbus": "#4a4234",
+    "limbus_width": 0.15,
+    "fibers": 90,
+    "fiber_color": "#9a907a",
+    "fiber_alpha": 0.35,
+    "spots": 8,
+    "glow": 0,
+    "cataract": 0.25,
+    "cataract_color": "#f4f0e4"
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#050302",
+    "min": 0.08,
+    "max": 0.16,
+    "count": 7,
+    "spread": 0.62,
+    "dart_s": 0.9,
+    "clump_every": 7,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#b48a78",
+    "shade": "#4a2a24",
+    "edge": "#2a0e0a",
+    "edge_width": 0.03,
+    "wet_line": "#d0403a",
+    "creases": 3,
+    "crease_color": "#5a2a22",
+    "texture": 0.6,
+    "spots_color": "#7a4034",
+    "lashes": 20,
+    "lash_length": 0.06
+  },
+  "highlight": {
+    "alpha": 0.7,
+    "size": 0.06
+  }
+}

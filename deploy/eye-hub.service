@@ -1,0 +1,14 @@
+[Unit]
+Description=Projector eye hub (web UI + behaviour)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=@USER@
+WorkingDirectory=@DIR@
+ExecStart=/usr/bin/python3 -u -m hub --port 8080
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

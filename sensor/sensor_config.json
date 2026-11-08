@@ -1,0 +1,11 @@
+{
+  "hub": "ws://eye-display.local:8080/ws",
+  "source": "picamera2",
+  "width": 640,
+  "height": 480,
+  "fps": 15,
+  "hflip": false,
+  "vflip": false,
+  "full_fov": true,
+  "preview_port": 8081
+}

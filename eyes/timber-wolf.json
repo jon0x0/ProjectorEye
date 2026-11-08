@@ -1,0 +1,65 @@
+{
+  "name": "Timber Wolf",
+  "description": "Pale gold predator eye glinting from grey fur",
+  "seed": 81,
+  "vignette": 0.7,
+  "motion": {
+    "micro": 0.5,
+    "pursuit": 0.8,
+    "saccades": 1.2,
+    "pupil_snap": 0.4
+  },
+  "geometry": {
+    "eye_center_y": 0.46,
+    "iris_radius": 0.44,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2,
+    "lid_shape": 1.7,
+    "lid_open_height": 0.9,
+    "lower_lid": 0.1
+  },
+  "sclera": {
+    "center": "#5a4a30",
+    "mid": "#3a2e1c",
+    "edge": "#100c06",
+    "veins": 4,
+    "vein_color": "#2a1a10"
+  },
+  "iris": {
+    "inner": "#fff0b0",
+    "mid": "#e0b850",
+    "outer": "#8a6020",
+    "limbus": "#1a1004",
+    "limbus_width": 0.14,
+    "fibers": 200,
+    "fiber_color": "#6a4410",
+    "fiber_alpha": 0.4,
+    "spots": 14,
+    "glow": 0.2,
+    "glow_color": "#ffe090"
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.15,
+    "max": 0.42,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#6a6460",
+    "shade": "#1a1816",
+    "edge": "#060504",
+    "edge_width": 0.035,
+    "wet_line": "#3a2a24",
+    "creases": 0,
+    "texture": 0.2,
+    "spots_color": "#3a3634",
+    "fur": 1,
+    "fur_color": "#a8a29a",
+    "lashes": 0
+  },
+  "highlight": {
+    "alpha": 0.75,
+    "size": 0.06
+  }
+}

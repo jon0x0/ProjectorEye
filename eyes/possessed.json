@@ -1,0 +1,69 @@
+{
+  "name": "Possessed",
+  "description": "Eye rolled back into the head, twitching, a sliver of iris showing; rolls further when it senses you",
+  "seed": 141,
+  "blink_strength": 0.4,
+  "vignette": 0.7,
+  "motion": {
+    "micro": 3.5,
+    "pursuit": 0.5,
+    "saccades": 1.5,
+    "rollback": 0.4,
+    "rollback_s": 2.5
+  },
+  "geometry": {
+    "eye_center_y": 0.98,
+    "iris_radius": 0.3,
+    "gaze_range_x": 0.25,
+    "gaze_range_y": 0.06,
+    "lid_shape": 1.9,
+    "lid_open_height": 0.8,
+    "lower_lid": 0.07
+  },
+  "sclera": {
+    "center": "#f2ece4",
+    "mid": "#d8c4b8",
+    "edge": "#7a2a24",
+    "veins": 70,
+    "vein_color": "#b8141a",
+    "vein_alpha": 0.8,
+    "vein_width": 0.01,
+    "vein_length": 0.8
+  },
+  "iris": {
+    "inner": "#9a8a7a",
+    "mid": "#5a4a3a",
+    "outer": "#2a1e14",
+    "limbus": "#0a0604",
+    "limbus_width": 0.2,
+    "fibers": 160,
+    "fiber_color": "#1a1208",
+    "fiber_alpha": 0.5,
+    "spots": 10,
+    "glow": 0
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#020100",
+    "min": 0.15,
+    "max": 0.35,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#c09a8a",
+    "shade": "#5a3a32",
+    "edge": "#2a0e0a",
+    "edge_width": 0.03,
+    "wet_line": "#e03a34",
+    "creases": 4,
+    "crease_color": "#6a3a30",
+    "texture": 0.6,
+    "spots_color": "#8a5a4a",
+    "lashes": 30,
+    "lash_length": 0.07
+  },
+  "highlight": {
+    "alpha": 0.6,
+    "size": 0.05
+  }
+}

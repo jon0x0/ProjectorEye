@@ -1,0 +1,10 @@
+{
+  "name": "Old One",
+  "description": "Pale, ancient blue eye with a goat pupil and heavy lashes",
+  "seed": 23,
+  "geometry": {"iris_radius": 0.33, "lid_shape": 2.6, "lower_lid": 0.1},
+  "sclera": {"center": "#e8e6da", "mid": "#cfc7b0", "edge": "#5e4a3a", "veins": 45, "vein_color": "#b0302a", "vein_alpha": 0.55},
+  "iris": {"inner": "#d8f0ff", "mid": "#6aa4c8", "outer": "#1e3e5c", "limbus": "#0a1420", "fiber_color": "#163044", "fibers": 260, "spots": 30, "glow": 0.15, "glow_color": "#9fe0ff"},
+  "pupil": {"shape": "goat", "min": 0.08, "max": 0.35, "height": 0.6, "rim_width": 0},
+  "lid": {"color": "#8a7766", "shade": "#2e231c", "edge": "#1a120c", "wet_line": "#c08a80", "creases": 6, "crease_color": "#3a2c22", "texture": 0.9, "spots_color": "#5a4636", "lashes": 28, "lash_length": 0.1}
+}

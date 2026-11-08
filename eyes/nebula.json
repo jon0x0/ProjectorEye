@@ -1,0 +1,50 @@
+{
+  "name": "Nebula",
+  "description": "Cosmic horror: rotating galaxy iris, black-hole pupil with a photon ring and flares",
+  "style": "nebula",
+  "lids": "on",
+  "seed": 21,
+  "vignette": 0.55,
+  "motion": {
+    "micro": 0.4,
+    "pursuit": 2.0,
+    "saccades": 0.4,
+    "pupil_speed": 0.4
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.5,
+    "gaze_range_x": 0.35,
+    "gaze_range_y": 0.18,
+    "lid_shape": 1.8,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.06
+  },
+  "pupil": {
+    "min": 0.12,
+    "max": 0.24
+  },
+  "nebula": {
+    "deep": "#0c0530",
+    "dust_color": "#7a3cc8",
+    "core": "#ffd0f0",
+    "ring": "#ffb060",
+    "star_color": "#e8ecff",
+    "spin": 0.22,
+    "arms": 2,
+    "dust": 1.1,
+    "stars": 1.2,
+    "flares": 1
+  },
+  "lid": {
+    "color": "#1c1630",
+    "shade": "#05030c",
+    "edge": "#000000",
+    "edge_width": 0.03,
+    "wet_line": "#5a3c9a",
+    "creases": 2,
+    "crease_color": "#08060e",
+    "texture": 0.5,
+    "spots_color": "#2a2050"
+  }
+}

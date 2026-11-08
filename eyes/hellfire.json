@@ -1,0 +1,12 @@
+{
+  "name": "Hellfire",
+  "description": "Molten orange demon eye with a glowing slit",
+  "seed": 7,
+  "vignette": 0.8,
+  "geometry": {"iris_radius": 0.42, "lid_shape": 1.6},
+  "sclera": {"center": "#3a0d06", "mid": "#24060a", "edge": "#050101", "veins": 30, "vein_color": "#ff4a12", "vein_alpha": 0.55, "vein_width": 0.006},
+  "iris": {"inner": "#fff3a0", "mid": "#ff8c1a", "outer": "#a3140a", "limbus": "#1a0200", "fibers": 220, "fiber_color": "#5a0a02", "fiber_alpha": 0.5, "glow": 0.65, "glow_color": "#ff6a00"},
+  "pupil": {"shape": "slit", "min": 0.06, "max": 0.4, "height": 0.95, "rim_color": "#ffe066", "rim_width": 0.02},
+  "lid": {"color": "#3b1a14", "shade": "#0d0403", "edge": "#000000", "wet_line": "#ff5a2a", "creases": 5, "crease_color": "#140503", "texture": 0.8, "spots_color": "#5a1c10"},
+  "highlight": {"alpha": 0.35}
+}

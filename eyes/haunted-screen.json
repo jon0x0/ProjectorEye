@@ -1,0 +1,70 @@
+{
+  "name": "Haunted Screen",
+  "description": "A possessed digital eye: cyan pixels, scanlines, and tearing glitches",
+  "seed": 251,
+  "blink_strength": 0.7,
+  "vignette": 0.6,
+  "glitch": 0.8,
+  "motion": {
+    "micro": 1,
+    "pursuit": 0.3,
+    "saccades": 2,
+    "pupil_snap": 0.6
+  },
+  "geometry": {
+    "eye_center_y": 0.46,
+    "iris_radius": 0.4,
+    "gaze_range_x": 0.45,
+    "gaze_range_y": 0.22,
+    "lid_shape": 2.2,
+    "lid_open_height": 0.95,
+    "lower_lid": 0.06
+  },
+  "sclera": {
+    "center": "#0a1a20",
+    "mid": "#04100c",
+    "edge": "#000000",
+    "veins": 12,
+    "vein_color": "#00ffa0",
+    "vein_alpha": 0.3,
+    "vein_width": 0.004
+  },
+  "iris": {
+    "inner": "#e0ffff",
+    "mid": "#00c8e0",
+    "outer": "#002a40",
+    "limbus": "#00ffff",
+    "limbus_width": 0.06,
+    "fibers": 120,
+    "fiber_color": "#00ffd0",
+    "fiber_alpha": 0.35,
+    "spots": 0,
+    "glow": 0.5,
+    "glow_color": "#00e8ff",
+    "scanline": 0.5,
+    "scan_color": "#ffffff",
+    "scan_speed": 2.5
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#000000",
+    "min": 0.12,
+    "max": 0.35,
+    "rim_color": "#ff00a0",
+    "rim_width": 0.015
+  },
+  "lid": {
+    "color": "#10202a",
+    "shade": "#000204",
+    "edge": "#00a0b0",
+    "edge_width": 0.015,
+    "wet_line": "#ff00a0",
+    "creases": 0,
+    "texture": 0.1,
+    "spots_color": "#002030"
+  },
+  "highlight": {
+    "alpha": 0.3,
+    "size": 0.04
+  }
+}

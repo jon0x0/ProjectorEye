@@ -1,0 +1,84 @@
+{
+  "name": "Smaug (Desolation)",
+  "description": "Film-style Smaug: amber mottled iris filling a narrow almond eye, broad black slit, craggy dark scales, cold window glint",
+  "seed": 7,
+  "vignette": 0.85,
+  "blink_strength": 0.8,
+  "motion": {
+    "micro": 0.2,
+    "pursuit": 1.8,
+    "saccades": 0.6,
+    "pupil_snap": 0.5,
+    "blink_speed": 1.6
+  },
+  "geometry": {
+    "eye_center_y": 0.42,
+    "iris_radius": 0.85,
+    "gaze_range_x": 0.16,
+    "gaze_range_y": 0.08,
+    "ball_radius": 2.0,
+    "lid_shape": 1.35,
+    "lid_open_height": 0.78,
+    "lower_lid": 0.2
+  },
+  "sclera": {
+    "center": "#4a2408",
+    "mid": "#2a1204",
+    "edge": "#080200",
+    "veins": 0
+  },
+  "iris": {
+    "inner": "#f4a848",
+    "mid": "#c86a14",
+    "outer": "#4a2004",
+    "limbus": "#120500",
+    "limbus_width": 0.22,
+    "fibers": 80,
+    "fiber_color": "#5a2a08",
+    "fiber_alpha": 0.3,
+    "spots": 0,
+    "glow": 0.18,
+    "glow_color": "#ff9030",
+    "cells": 460,
+    "cell_size": 1.15,
+    "cell_color": "#7a3a0c",
+    "cell_fill": "#3a1404"
+  },
+  "pupil": {
+    "shape": "slit",
+    "color": "#020100",
+    "min": 0.05,
+    "max": 0.17,
+    "height": 0.55,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#2e2a26",
+    "shade": "#080706",
+    "edge": "#030202",
+    "edge_width": 0.065,
+    "wet_line": "#7a5a46",
+    "creases": 0,
+    "crease_color": "#141210",
+    "texture": 0.6,
+    "spots_color": "#4a3828",
+    "scales": 0.14,
+    "scale_highlight": "#6a727e",
+    "lashes": 0,
+    "scale_style": "craggy",
+    "light": 50,
+    "rim_highlight": "#a8a49c",
+    "rim_highlight_alpha": 0.2
+  },
+  "highlight": {
+    "alpha": 0.85,
+    "size": 0.035,
+    "x": -0.32,
+    "y": 0.02,
+    "window": 0.45,
+    "window_color": "#c4e2ff",
+    "window_size": 0.22,
+    "wx": 0.38,
+    "wy": -0.02
+  }
+}

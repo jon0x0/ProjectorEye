@@ -1,0 +1,47 @@
+{
+  "name": "The Void",
+  "description": "All-black 'no soul' eye: wet oily sheen, smoke behind the surface, a pulsing dying star",
+  "style": "void",
+  "lids": "on",
+  "seed": 3,
+  "vignette": 0.5,
+  "motion": {
+    "micro": 0.3,
+    "pursuit": 1.6,
+    "saccades": 0.5
+  },
+  "geometry": {
+    "eye_center_y": 0.47,
+    "iris_radius": 0.4,
+    "gaze_range_x": 0.4,
+    "gaze_range_y": 0.2,
+    "lid_shape": 1.9,
+    "lid_open_height": 0.96,
+    "lower_lid": 0.06
+  },
+  "pupil": {
+    "min": 0.04,
+    "max": 0.16
+  },
+  "void": {
+    "base": "#000000",
+    "smoke_color": "#241a30",
+    "smoke": 0.9,
+    "sheen": 0.7,
+    "iridescence": 0.4,
+    "star_color": "#f6f4ff",
+    "pulse": 0.5,
+    "parallax": 0.4
+  },
+  "lid": {
+    "color": "#2b2a2e",
+    "shade": "#060608",
+    "edge": "#000000",
+    "edge_width": 0.03,
+    "wet_line": "#3a3440",
+    "creases": 3,
+    "crease_color": "#0a0a0c",
+    "texture": 0.4,
+    "spots_color": "#141418"
+  }
+}

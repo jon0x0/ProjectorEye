@@ -1,0 +1,74 @@
+{
+  "name": "Rotting",
+  "description": "Hemorrhaged yellowed eye, sickly cataract-clouded iris, slow wet drift and sluggish reactions",
+  "seed": 5,
+  "vignette": 0.7,
+  "blink_strength": 0.8,
+  "motion": {
+    "micro": 0.2,
+    "pursuit": 6,
+    "saccades": 0,
+    "drift": 0.08,
+    "pupil_speed": 0.3,
+    "blink_speed": 2.5
+  },
+  "geometry": {
+    "eye_center_y": 0.44,
+    "iris_radius": 0.3,
+    "gaze_range_x": 0.55,
+    "gaze_range_y": 0.3,
+    "lid_shape": 1.9,
+    "lid_open_height": 0.9,
+    "lower_lid": 0.1
+  },
+  "sclera": {
+    "center": "#e8dca0",
+    "mid": "#c8b070",
+    "edge": "#5a2a10",
+    "veins": 90,
+    "vein_color": "#8a1208",
+    "vein_alpha": 0.8,
+    "vein_width": 0.01,
+    "vein_length": 0.9,
+    "blotches": 7,
+    "blotch_color": "#8a0a06"
+  },
+  "iris": {
+    "inner": "#a8b090",
+    "mid": "#7a8a68",
+    "outer": "#3a4434",
+    "limbus": "#1a2016",
+    "limbus_width": 0.22,
+    "fibers": 160,
+    "fiber_color": "#2a3424",
+    "fiber_alpha": 0.4,
+    "spots": 24,
+    "glow": 0,
+    "cataract": 0.6,
+    "cataract_color": "#e6e2cc"
+  },
+  "pupil": {
+    "shape": "round",
+    "color": "#0a0806",
+    "min": 0.15,
+    "max": 0.32,
+    "rim_width": 0
+  },
+  "lid": {
+    "color": "#8a7a5a",
+    "shade": "#2a1e12",
+    "edge": "#1a0c06",
+    "edge_width": 0.035,
+    "wet_line": "#b04030",
+    "creases": 5,
+    "crease_color": "#3a2a1a",
+    "texture": 1.0,
+    "spots_color": "#4a3a22",
+    "lashes": 10,
+    "lash_length": 0.05
+  },
+  "highlight": {
+    "alpha": 0.5,
+    "size": 0.05
+  }
+}
