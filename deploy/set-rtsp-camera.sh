@@ -1,6 +1,6 @@
 #!/bin/sh
 # Camera Pi: set up a network (RTSP/RTSPS) camera as a motion source.
-#   sh deploy/set-rtsp-camera.sh rtsps://192.168.1.70:322/stream0 jon
+#   sh deploy/set-rtsp-camera.sh rtsps://192.168.1.70:322/stream0 camuser
 # Prompts for the camera password (not echoed) and stores it in
 # ~/.config/eye-sensor/rtsp_password (mode 600), never in the project folder.
 # Then tests the stream and restarts the sensor. Choose "Network camera" on
