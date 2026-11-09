@@ -1,5 +1,8 @@
 # Projector Eye
 
+**[Try the phone UI in your browser](https://jon0x0.github.io/ProjectorEye/)**: a demo with
+no Pi. Pick an eye, switch modes, and move over the preview to be tracked.
+
 A monster eye projected into a window: a half circle (flat side down) or the
 whole screen. It wakes when someone moves below, blinks, stares at them and
 follows them. When they leave it holds its gaze, looks around, then falls
@@ -85,7 +88,8 @@ across the scene every 40 s. `--source opencv:0` uses a webcam;
 
 On Windows, port 8080 is often reserved by Hyper-V, hence 8790 above.
 
-Tests: `python tests/test_hub.py`. `sh tests/pi_load.sh` on a projector Pi
+Tests: `python tests/test_hub.py`. After changing default settings or eyes, run
+`python tools/build_demo_data.py` to refresh the demo's copy. `sh tests/pi_load.sh` on a projector Pi
 measures the real frame rate per eye plus CPU and temperature.
 
 ## Install on the Pis
@@ -226,7 +230,9 @@ hub/        server.py (HTTP/WebSocket), brain.py (state machine), fusion.py (cam
             calibration.py (camera->gaze fits), settings.py (defaults + persistence)
 sensor/     eye_sensor.py (service, one worker per camera), motion.py (detector),
             sources.py (Pi camera, RTSP via ffmpeg, webcam/file, synthetic)
-static/     index.html + js/app.js (phone UI), js/cameras.js (cameras, calibration views,
+index.html  phone UI (at the root so GitHub Pages serves it as a demo)
+static/     js/app.js (phone UI), js/demo-hub.js (in-browser hub for the demo),
+            js/cameras.js (cameras, calibration views,
             combined view), display.html (kiosk), js/eye-renderer.js (shared renderer),
             js/shader-eye.js + js/dragon-eye.js (WebGL and photoreal eyes),
             js/eye-schema.js (template defaults/editor)

@@ -262,5 +262,14 @@ class BrainTest(unittest.TestCase):
         self.assertEqual(self.brain.phase, "waking")
 
 
+class DemoDataTest(unittest.TestCase):
+    def test_demo_data_up_to_date(self):
+        # The GitHub Pages demo uses a copy of the defaults and eyes.
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tools"))
+        import build_demo_data
+        with open(build_demo_data.OUT, encoding="utf-8") as f:
+            self.assertEqual(f.read(), build_demo_data.build(), "run: python tools/build_demo_data.py")
+
+
 if __name__ == "__main__":
     unittest.main()

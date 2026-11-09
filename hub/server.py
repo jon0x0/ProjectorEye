@@ -601,17 +601,19 @@ class Hub:
         self.settings.save()
 
 
-def page(name):
+def page(path):
     async def handler(request):
-        return web.FileResponse(os.path.join(STATIC, name), headers={"Cache-Control": "no-cache"})
+        return web.FileResponse(path, headers={"Cache-Control": "no-cache"})
     return handler
 
 
 def make_app(settings_path, eyes_dir, media_dir):
     hub = Hub(settings_path, eyes_dir, media_dir)
     app = web.Application(client_max_size=1024 ** 3)
-    app.router.add_get("/", page("index.html"))
-    app.router.add_get("/display", page("display.html"))
+    # The phone UI sits at the project root so GitHub Pages can serve it too
+    # (as an in-browser demo, static/js/demo-hub.js).
+    app.router.add_get("/", page(os.path.join(ROOT, "index.html")))
+    app.router.add_get("/display", page(os.path.join(STATIC, "display.html")))
     app.router.add_get("/ws", hub.ws_handler)
     app.router.add_get("/api/media", hub.api_media_list)
     app.router.add_post("/api/media", hub.api_media_upload)

@@ -1,5 +1,8 @@
 // WebSocket link to the hub with automatic reconnect.
+import { isDemo, demoLink } from "./demo-hub.js";
+
 export function connect(role, handlers) {
+  if (role === "ui" && isDemo()) return demoLink(role, handlers);
   let ws = null;
   let backoff = 500;
   const link = {
